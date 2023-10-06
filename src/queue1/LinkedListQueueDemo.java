@@ -6,11 +6,10 @@ public class LinkedListQueueDemo {
 
     public static void main(String[] args) {
         LinkedListQueue<Integer> list = new LinkedListQueue<>();
-        list.enqueue(10);
-        list.enqueue(20);
-        list.enqueue(30);
-        list.enqueue(40);
-        System.out.println(list.dequeue());
+        Integer deq = list.dequeue();
+        System.out.println(deq);
+        System.out.println("-----------");
+        System.out.println(list.isEmpty());
         list.show();
     }
 }

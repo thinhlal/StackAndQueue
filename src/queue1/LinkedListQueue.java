@@ -1,7 +1,5 @@
 package queue1;
 
-
-
 public class LinkedListQueue<E> implements IQueue<E> {
 
     private class Node<E> {
@@ -49,6 +47,7 @@ public class LinkedListQueue<E> implements IQueue<E> {
     @Override
     public E dequeue() {
         if (front == null) {
+            this.rear = null;
             return null;
         }
         E value = (E) this.front.value;

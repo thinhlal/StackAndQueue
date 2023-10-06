@@ -35,6 +35,7 @@ public class LinkedListStack<E> implements IStack<E> {
         Node newNode = new Node(item);
         if (topNode == null) {
             topNode = newNode;
+            ++n;
         }else{
             newNode.next = topNode;
             topNode = newNode;
